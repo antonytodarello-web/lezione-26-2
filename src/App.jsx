@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import RestaurantNavbar from "./components/ResturantNavbar";
 import Home from "./components/Home";
+import BookATable from "./components/BookATable";
 
 // questa riga fa in modo che il foglio css di bootstrap venga aggiunto a App
 // e di conseguenza a tutti i componenti React
@@ -24,6 +25,7 @@ function App() {
     <>
       <RestaurantNavbar active="Home" />
       <Home />
+      <BookATable />
     </>
   );
 }
