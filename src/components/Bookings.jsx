@@ -43,9 +43,10 @@ class Bookings extends Component {
         console.log("ERRORE nella chiamata", err);
       });
   };
-
+  componentDidMount() {
+    this.getBookings();
+  }
   render() {
-    //this.getBookings();
     return (
       <Container>
         <Row className="justify-content-center">
@@ -61,7 +62,7 @@ class Bookings extends Component {
                 this.state.prenotazioni.map((Booking) => {
                   return (
                     <ListGroup.Item key={Booking._id}>
-                      {Booking.nome} per {Booking.numeroDiPersone}
+                      {Booking.nome}per{Booking.numeroDiPersone}
                     </ListGroup.Item>
                   );
                 })
